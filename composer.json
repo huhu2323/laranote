@@ -1,0 +1,13 @@
+{
+    "name": "haymetg/laranote",
+    "description": "A lightweight model note maker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hayme The Great",
+            "email": "jameskyurem@gmail.com"
+        }
+    ],
+    "require": {}
+}
