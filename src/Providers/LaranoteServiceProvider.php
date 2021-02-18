@@ -4,7 +4,7 @@ namespace HaymeTG\Laranote;
 
 use Illuminate\Support\ServiceProvider;
 
-class LUUIDServiceProvider extends ServiceProvider
+class LaranoteServiceProvider extends ServiceProvider
 {
 
     public function boot()
@@ -14,7 +14,7 @@ class LUUIDServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        //
     }
 
 }

@@ -9,5 +9,12 @@
             "email": "jameskyurem@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HaymeTG\\Laranote\\LaranoteServiceProvider"
+            ]
+        }
+    }
 }
