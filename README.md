@@ -2,7 +2,7 @@
 
 1) Install Laranote `composer require haymetg/laranote`
 2) Use `HasLaranote` trait for models with notes.
-3) Run `php artisan vendor:publish --provider="HaymeTG\Laranote\LaranoteServiceProvider`
+3) Run `php artisan vendor:publish --provider="HaymeTG\Laranote\LaranoteServiceProvider"`
 4) Use it.
 
 ### Methods:
