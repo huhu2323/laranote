@@ -21,6 +21,8 @@ class Laranote extends Model
      */
     public function getLaranotableAttribute()
     {
-        return $this->morphTo();
+        $model = $this->model;
+        $object = new $this->model;
+        return $model::where($object->getKeyName(), $this->model_id)->first();
     }
 }
