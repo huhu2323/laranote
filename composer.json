@@ -13,9 +13,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "HaymeTG\\Laranote\\": "src/",
-            "HaymeTG\\Laranote\\Traits\\": "src/Traits/",
-            "HaymeTG\\Laranote\\Models\\": "src/Models/"
+            "HaymeTG\\Laranote\\": "src/"
         }
     },
     "extra": {
