@@ -5,13 +5,13 @@
 3) Use `HasLaranote` trait for models with notes.
 4) Use it.
 
-### Methods:
+### Trait Methods:
 `createNote()`
 for creating a note
 `example: $user->createNote('Im a note');`
 will fetch all notes saved in the model.
 
-### Accessors:
+### Trait Accessors:
 * **notes**
 `example: $user->notes`
 Will retrieve all notes saved. This will return a collection
@@ -27,3 +27,8 @@ Will retrieve the last note created by id.
 * **latest_note**
 `example: $user->latest_note`
 Will retrieve the latest note created by date.
+
+### Model Accessors:
+* **laranotable**
+`example: $user->laranotable`
+Will retrieve the parent model of a laranote.
