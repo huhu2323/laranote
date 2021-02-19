@@ -1,6 +1,6 @@
 <?php
 
-namespace \HaymeTG\Laranote\Providers;
+namespace Providers;
 
 use Illuminate\Support\ServiceProvider;
 
