@@ -1,6 +1,6 @@
 <?php
 
-namespace HaymeTG\Laranote\Models;
+namespace \HaymeTG\Laranote\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

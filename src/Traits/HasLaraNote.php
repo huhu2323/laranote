@@ -1,6 +1,6 @@
 <?php
 
-namespace HaymeTG\Laranote\Traits;
+namespace \HaymeTG\Laranote\Traits;
 
 use HaymeTG\Laranote\Models\LaraNote;
 

@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HaymeTG\\Laranote\\LaranoteServiceProvider"
+                "HaymeTG\\Laranote\\Providers\\LaranoteServiceProvider"
             ]
         }
     },
