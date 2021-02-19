@@ -22,5 +22,8 @@
                 "HaymeTG\\Laranote\\LaranoteServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0@dev"
     }
 }
