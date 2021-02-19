@@ -1,10 +1,10 @@
 <?php
 
-namespace \HaymeTG\Laranote\Models;
+namespace HaymeTG\Laranote\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class LaraNote extends Model
+class Laranote extends Model
 {
 
     protected $table = 'notes';

@@ -1,6 +1,6 @@
 <?php
 
-namespace \HaymeTG\Laranote\Traits;
+namespace HaymeTG\Laranote\Traits;
 
 use HaymeTG\Laranote\Models\LaraNote;
 
@@ -14,7 +14,7 @@ trait HasLaranote {
      */
     public function createNote($note)
     {
-        $laranote = LaraNote::create([
+        $laranote = Laranote::create([
             'model' => get_class($this),
             'model_id' => $this->{$this->primaryKey},
             'note' => $note
@@ -31,7 +31,7 @@ trait HasLaranote {
      */
     public function getNotesAttribute()
     {
-        return LaraNote::where('model', get_class($this))
+        return Laranote::where('model', get_class($this))
             ->where('model_id', $this->getKey())
             ->get();
     }
@@ -43,7 +43,7 @@ trait HasLaranote {
      */
     public function getFirstNoteAttribute()
     {
-        return LaraNote::where('model', get_class($this))
+        return Laranote::where('model', get_class($this))
             ->where('model_id', $this->getKey())
             ->first();
     }
@@ -55,7 +55,7 @@ trait HasLaranote {
      */
     public function getLastNoteAttribute()
     {
-        return LaraNote::where('model', get_class($this))
+        return Laranote::where('model', get_class($this))
             ->where('model_id', $this->getKey())
             ->get()
             ->last();
@@ -68,7 +68,7 @@ trait HasLaranote {
      */
     public function getLatestNoteAttribute()
     {
-        return LaraNote::where('model', get_class($this))
+        return Laranote::where('model', get_class($this))
             ->where('model_id', $this->getKey())
             ->latest()
             ->first();
