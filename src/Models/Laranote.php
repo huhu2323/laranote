@@ -19,7 +19,7 @@ class Laranote extends Model
     /**
      * Get the parent commentable model (post or video).
      */
-    public function laranotable()
+    public function getLaranotableAttribute()
     {
         return $this->morphTo();
     }

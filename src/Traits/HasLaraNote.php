@@ -2,7 +2,7 @@
 
 namespace HaymeTG\Laranote\Traits;
 
-use HaymeTG\Laranote\Models\LaraNote;
+use HaymeTG\Laranote\Models\Laranote;
 
 trait HasLaranote {
 
