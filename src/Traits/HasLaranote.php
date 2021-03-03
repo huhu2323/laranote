@@ -73,4 +73,38 @@ trait HasLaranote {
             ->latest()
             ->first();
     }
+
+    /**
+     * Delete a note by id
+     * 
+     * @return Laranote
+     */
+    public function deleteNote($id)
+    {
+        return Laranote::find($id)->delete();
+    }
+
+    /**
+     * Delete a note by id
+     * 
+     * @return Laranote
+     */
+    public function deleteAll()
+    {
+        return Laranote::truncate();
+    }
+
+    /**
+     * Update a note by id
+     * 
+     * @return Laranote
+     */
+    public function update($id, $note)
+    {
+        $note = Laranote::find($id);
+        $note->note = $note;
+        $note->save();
+
+        return $note;
+    }
 }
