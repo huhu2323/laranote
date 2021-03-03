@@ -105,7 +105,7 @@ trait HasLaranote {
      * 
      * @return Laranote
      */
-    public function update($id, $note)
+    public function updateNote($id, $note)
     {
         $note = Laranote::where('model', get_class($this))
             ->where('model_id', $this->id)
