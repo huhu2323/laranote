@@ -81,7 +81,11 @@ trait HasLaranote {
      */
     public function deleteNote($id)
     {
-        return Laranote::find($id)->delete();
+        return Laranote::where('id', $id)
+            ->where('model', get_class($this))
+            ->where('model_id', $this->id)
+            ->first()
+            ->delete();
     }
 
     /**
@@ -91,7 +95,9 @@ trait HasLaranote {
      */
     public function deleteAll()
     {
-        return Laranote::truncate();
+        return Laranote::where('model', get_class($this))
+            ->where('model_id', $this->id)
+            ->delete();
     }
 
     /**
@@ -101,7 +107,10 @@ trait HasLaranote {
      */
     public function update($id, $note)
     {
-        $note = Laranote::find($id);
+        $note = Laranote::where('model', get_class($this))
+            ->where('model_id', $this->id)
+            ->where('id', $id)
+            ->first();
         $note->note = $note;
         $note->save();
 
