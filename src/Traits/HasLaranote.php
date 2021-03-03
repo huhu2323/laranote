@@ -116,4 +116,17 @@ trait HasLaranote {
 
         return $note;
     }
+
+    /**
+     * Update a note by id
+     * 
+     * @return Laranote
+     */
+    public function getNote($id)
+    {
+        return Laranote::where('model', get_class($this))
+            ->where('model_id', $this->id)
+            ->where('id', $id)
+            ->first();
+    }
 }
